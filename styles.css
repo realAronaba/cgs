@@ -132,7 +132,7 @@ h2 { max-width: 700px; margin-bottom: 0; font-size: clamp(38px, 4.4vw, 55px); fo
 .closing-copy .eyebrow { margin-bottom: 14px; }
 .closing-copy h2 { font-size: clamp(39px, 4.5vw, 55px); }
 .closing-copy > p:not(.eyebrow) { max-width: 450px; margin: 19px 0 24px; color: #5c5145; font-size: 16px; line-height: 1.7; }
-.contact-email { display: flex; width: fit-content; margin-top: 13px; color: var(--gold-deep); font-size: 14px; font-weight: 750; }
+.contact-link { display: flex; width: fit-content; margin-top: 13px; color: var(--gold-deep); font-size: 14px; font-weight: 750; }
 .contact-location { display: flex; align-items: center; gap: 9px; margin-top: 18px; color: #62594f; font-size: 13px; font-weight: 650; }
 .local-marker { display: inline-block; width: 7px; height: 7px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--gold-deep); }
 
