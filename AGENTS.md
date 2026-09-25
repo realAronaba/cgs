@@ -115,6 +115,12 @@ Mettre cette section à jour au fil du travail. Garder une trace brève des chan
 - Publication du commit `9fdec8e` sur la branche `main` du dépôt public `realAronaba/cgs`.
 - La branche locale suit `origin/main`. GitHub Pages et le domaine public restent à configurer.
 
+### 2026-09-25 — Simplification de la page
+
+- Navigation ramenée aux expertises, aux clients et au contact; les quatre étapes de la méthode restent visibles dans le premier écran.
+- Suppression de la section méthode répétée et des blocs mission/vision redondants; les engagements distinctifs sont formulés en phrases courtes.
+- Agrandissement des textes de lecture et simplification des rubriques pour faciliter la lecture sur ordinateur et mobile.
+
 ### À confirmer avant publication
 
 - Activation de GitHub Pages pour publier le site, si souhaité.
