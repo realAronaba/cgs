@@ -9,8 +9,8 @@ Ce fichier est le guide vivant du site. Toute évolution importante du contenu, 
 - L'entrée du site est `index.html`, à la racine du projet.
 - Le logo fourni est `assets/cgs-logo.jpg`.
 - Les textes de référence sont ceux transmis par le client dans la conversation. Ne pas remplacer le positionnement par une offre différente.
-- Dépôt GitHub de destination identifié : `realAronaba/cgs` (public, branche par défaut `main`).
-- La publication du site via GitHub Pages n'est pas encore configurée.
+- Le dépôt GitHub public est `realAronaba/cgs`; la branche locale `main` suit `origin/main`.
+- Le code du site a été poussé sur GitHub le 2026-09-25. GitHub Pages n'est pas encore activé.
 
 ## 2. Positionnement à préserver
 
@@ -74,7 +74,7 @@ Pour chaque nouvelle évolution :
 
 - Le site peut être publié comme site statique, sans commande de compilation.
 - La racine du projet contient `index.html`; le répertoire de publication est donc la racine du projet.
-- Le dépôt GitHub choisi est `realAronaba/cgs`, public, avec `main` comme branche par défaut. Le remote local doit être configuré pour le push.
+- Le dépôt GitHub choisi est `realAronaba/cgs`, public, avec `main` comme branche par défaut. Le remote local `origin` pointe vers ce dépôt.
 - Le push du code sur GitHub ne publie pas automatiquement le site. L'activation de GitHub Pages ou d'un autre hébergeur reste à faire si le client veut une URL publique.
 - Confirmer l'adresse de contact avant publication.
 
@@ -110,8 +110,13 @@ Mettre cette section à jour au fil du travail. Garder une trace brève des chan
 - Dépôt public `realAronaba/cgs` identifié dans le compte GitHub connecté; dépôt vide et branche par défaut `main` au moment de la préparation.
 - Le site est prêt à être poussé sur `main`. GitHub Pages reste à activer séparément pour obtenir une URL de site.
 
+### 2026-09-25 — Premier push GitHub
+
+- Publication du commit `9fdec8e` sur la branche `main` du dépôt public `realAronaba/cgs`.
+- La branche locale suit `origin/main`. GitHub Pages et le domaine public restent à configurer.
+
 ### À confirmer avant publication
 
-- Hébergeur ou plateforme de déploiement.
+- Activation de GitHub Pages pour publier le site, si souhaité.
 - Adresse de contact à afficher publiquement.
 - Nom de domaine, si CGS souhaite utiliser un domaine personnalisé.
