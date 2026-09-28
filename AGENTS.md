@@ -42,6 +42,7 @@ Les marqueurs du cabinet sont la continuité sur tout le cycle projet, l'indépe
 - Garder une présentation sobre, lisible et adaptée à une clientèle de grandes entreprises et d'organisations publiques.
 - Préserver l'affichage mobile, le menu mobile, les liens de navigation, les états de focus clavier et le lien d'accès direct au contenu.
 - Garder les textes lisibles et les boutons explicites. Ne pas ajouter d'animations ou d'éléments décoratifs qui nuisent à la lisibilité.
+- Limiter les animations aux apparitions discrètes au défilement, aux quatre étapes et aux retours au survol. Respecter `prefers-reduced-motion` et ne jamais masquer le contenu si JavaScript est désactivé.
 - Conserver le logo original dans `assets/cgs-logo.jpg`, sauf demande explicite de remplacement.
 
 ## 5. Fichiers du site
@@ -128,6 +129,11 @@ Mettre cette section à jour au fil du travail. Garder une trace brève des chan
 
 - Conservation de la version française à la racine et ajout de la version anglaise dans `en/`, avec un sélecteur FR | EN sur les deux pages.
 - Adaptation des textes en anglais professionnel et mise à jour des métadonnées, chemins de ressources et consignes pour maintenir les deux langues cohérentes.
+
+### 2026-09-28 — Animations discrètes
+
+- Ajout d'apparitions progressives au défilement, d'une entrée séquencée pour les quatre étapes, d'un dessin doux des anneaux du bloc Contact et de retours légers au survol.
+- Conservation des couleurs et des contenus; prise en compte des préférences de réduction des animations et maintien de l'affichage complet sans JavaScript.
 
 ### À confirmer avant publication
 

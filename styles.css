@@ -63,6 +63,36 @@ h1 em, h2 em { color: var(--gold-deep); font-style: normal; }
 .text-link { display: inline-flex; gap: 9px; align-items: center; font-size: 14px; font-weight: 750; }
 .text-link span { color: var(--gold-deep); font-size: 17px; }
 
+html.motion-ready [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .65s cubic-bezier(.2,.75,.25,1), box-shadow .25s ease, border-color .25s ease; }
+html.motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+html.motion-ready .cycle-panel[data-reveal] { transition-delay: .12s; }
+html.motion-ready .cycle-panel .cycle-item { opacity: 0; transform: translateY(8px); transition: opacity .42s ease, transform .5s cubic-bezier(.2,.75,.25,1); }
+html.motion-ready .cycle-panel.is-visible .cycle-item { opacity: 1; transform: translateY(0); }
+html.motion-ready .cycle-panel.is-visible .cycle-item:nth-child(1) { transition-delay: .12s; }
+html.motion-ready .cycle-panel.is-visible .cycle-item:nth-child(2) { transition-delay: .23s; }
+html.motion-ready .cycle-panel.is-visible .cycle-item:nth-child(3) { transition-delay: .34s; }
+html.motion-ready .cycle-panel.is-visible .cycle-item:nth-child(4) { transition-delay: .45s; }
+html.motion-ready .cycle-panel .cycle-marker { transition: background-color .3s ease, border-color .3s ease, transform .35s ease; }
+html.motion-ready .cycle-panel.is-visible .cycle-marker { transform: scale(1.06); }
+html.motion-ready .expertise-grid .expertise-card:nth-child(2),
+html.motion-ready .proof-grid article:nth-child(2) { transition-delay: .07s; }
+html.motion-ready .expertise-grid .expertise-card:nth-child(3),
+html.motion-ready .proof-grid article:nth-child(3) { transition-delay: .14s; }
+html.motion-ready .expertise-grid .expertise-card:nth-child(4),
+html.motion-ready .proof-grid article:nth-child(4) { transition-delay: .21s; }
+html.motion-ready .audience-grid .audience-card:nth-child(2) { transition-delay: .1s; }
+.expertise-card { transition: box-shadow .25s ease; }
+.expertise-card:hover { box-shadow: 0 12px 28px rgb(25 25 27 / 10%); }
+.audience-card { transition: border-color .25s ease; }
+.audience-card:hover { border-color: rgb(184 139 89 / 68%); }
+html.motion-ready .closing-art .closing-ring { opacity: .25; transition: opacity .55s ease, transform .7s cubic-bezier(.2,.75,.25,1); }
+html.motion-ready .closing-art[data-reveal]:not(.is-visible) .ring-one { transform: rotate(-25deg) scale(.86); }
+html.motion-ready .closing-art[data-reveal]:not(.is-visible) .ring-two { transform: rotate(42deg) scale(.86); }
+html.motion-ready .closing-art[data-reveal]:not(.is-visible) .ring-three { transform: scale(.86); }
+html.motion-ready .closing-art.is-visible .closing-ring { opacity: 1; }
+html.motion-ready .closing-art.is-visible .ring-two { transition-delay: .1s; }
+html.motion-ready .closing-art.is-visible .ring-three { transition-delay: .2s; }
+
 .cycle-panel { position: relative; padding: 26px 28px 0; overflow: hidden; border: 1px solid #29282a; border-radius: 4px; background: #1b1a1c; color: #f7f4ef; box-shadow: 0 30px 70px rgb(39 32 25 / 14%); isolation: isolate; }
 .cycle-panel::before { position: absolute; z-index: -1; inset: 0; background-image: linear-gradient(rgb(255 255 255 / 3%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 3%) 1px, transparent 1px); background-size: 34px 34px; content: ""; mask-image: linear-gradient(130deg, #000, transparent 85%); }
 .cycle-panel::after { position: absolute; z-index: -1; right: -90px; bottom: -180px; width: 400px; height: 400px; border: 1px solid rgb(184 139 89 / 23%); border-radius: 50%; content: ""; }
@@ -240,4 +270,5 @@ h2 { max-width: 700px; margin-bottom: 0; font-size: clamp(38px, 4.4vw, 55px); fo
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  html.motion-ready [data-reveal], html.motion-ready .cycle-panel .cycle-item { opacity: 1 !important; transform: none !important; }
 }
