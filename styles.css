@@ -37,6 +37,10 @@ button { color: inherit; }
 .nav-cta { display: inline-flex; align-items: center; gap: 10px; padding: 11px 15px; border: 1px solid #cfc8bd; border-radius: 3px; transition: background .2s ease, border .2s ease; }
 .nav-cta:hover { background: var(--white); border-color: var(--ink); }
 .nav-cta span { color: var(--gold-deep); font-size: 17px; line-height: 1; }
+.language-switch { display: inline-flex; align-items: center; gap: 3px; padding: 3px; border: 1px solid #cfc8bd; border-radius: 3px; font-size: 11px; font-weight: 750; line-height: 1; }
+.language-switch a { min-width: 30px; padding: 6px 5px; border-radius: 2px; color: #5f5b57; text-align: center; transition: background .2s ease, color .2s ease; }
+.language-switch a[aria-current="page"] { background: var(--ink); color: var(--white); }
+.language-switch a:hover:not([aria-current="page"]) { background: var(--white); color: var(--ink); }
 .menu-toggle { display: none; }
 
 .hero { position: relative; padding-top: 80px; padding-bottom: 92px; overflow: hidden; }
@@ -169,6 +173,7 @@ h2 { max-width: 700px; margin-bottom: 0; font-size: clamp(38px, 4.4vw, 55px); fo
   .navigation.is-open { display: flex; flex-direction: column; }
   .navigation > a:not(.nav-cta) { padding: 13px 4px; border-bottom: 1px solid #e5e0d7; }
   .navigation .nav-cta { justify-content: space-between; margin-top: 13px; }
+  .language-switch { align-self: flex-start; margin-top: 13px; }
   .hero { padding-top: 48px; padding-bottom: 58px; }
   .hero-grid { display: flex; flex-direction: column; align-items: stretch; gap: 39px; }
   .hero-copy { padding: 0; }

@@ -4,9 +4,9 @@ Ce fichier est le guide vivant du site. Toute évolution importante du contenu, 
 
 ## 1. Projet et état actuel
 
-- Site vitrine en français pour Carbure Global Service (CGS), cabinet de conseil de droit sénégalais basé à Dakar.
-- Site statique d'une page. Il n'y a ni framework, ni dépendance à installer, ni étape de compilation.
-- L'entrée du site est `index.html`, à la racine du projet.
+- Site vitrine bilingue pour Carbure Global Service (CGS), cabinet de conseil de droit sénégalais basé à Dakar.
+- Site statique sans framework, dépendance à installer ni étape de compilation. Chaque langue présente une page d'accueil d'une page.
+- L'entrée française est `index.html`; l'entrée anglaise est `en/index.html`.
 - Le logo fourni est `assets/cgs-logo.jpg`.
 - Les textes de référence sont ceux transmis par le client dans la conversation. Ne pas remplacer le positionnement par une offre différente.
 - Le dépôt GitHub public est `realAronaba/cgs`; la branche locale `main` suit `origin/main`.
@@ -27,7 +27,8 @@ Les marqueurs du cabinet sont la continuité sur tout le cycle projet, l'indépe
 
 ## 3. Règles de rédaction
 
-- Écrire en français professionnel, simple, direct et humain.
+- Écrire en français et en anglais professionnel, simple, direct et humain. La version anglaise doit être une adaptation naturelle du contenu français, pas une traduction mot à mot.
+- Utiliser l'anglais international/britannique (par exemple « organisation » et « programme »), cohérent avec le public ouest-africain.
 - S'adresser au lecteur avec « vous » et parler de CGS avec « nous ».
 - Préférer les phrases courtes, les verbes actifs et les bénéfices concrets.
 - Éviter les répétitions entre les rubriques et le jargon lorsqu'un mot courant suffit.
@@ -46,6 +47,7 @@ Les marqueurs du cabinet sont la continuité sur tout le cycle projet, l'indépe
 ## 5. Fichiers du site
 
 - `index.html` : contenu, structure, métadonnées et navigation.
+- `en/index.html` : version anglaise de la page, avec les mêmes rubriques et les mêmes fonctionnalités.
 - `styles.css` : couleurs, typographie, mise en page et règles responsive.
 - `script.js` : ouverture/fermeture du menu mobile et année du pied de page.
 - `assets/cgs-logo.jpg` : logo fourni.
@@ -62,11 +64,12 @@ Pour chaque nouvelle évolution :
 1. Lire la demande et consulter les fichiers concernés avant de modifier le site.
 2. Vérifier les consignes de ce fichier et les informations de référence fournies par le client.
 3. Modifier les fichiers existants en gardant la structure statique du projet, sauf demande contraire.
-4. Vérifier que les textes restent cohérents entre l'accueil, les expertises, la méthode, le cabinet et le contact.
-5. Vérifier que les liens, les noms de fichiers et les chemins des ressources restent cohérents avec `index.html`.
-6. Mettre à jour `README.md` si les modalités d'utilisation ou de publication changent.
-7. Ajouter une entrée datée au journal ci-dessous pour toute évolution notable, ainsi que les décisions prises et les points restant à confirmer.
-8. Dans le compte rendu, indiquer les fichiers modifiés et les vérifications réellement effectuées. Ne pas annoncer une mise en ligne tant qu'une URL publique n'a pas été obtenue et vérifiée.
+4. Vérifier que la promesse, les quatre étapes, les expertises, les clientèles et le contact restent cohérents dans les deux langues.
+5. Pour tout changement éditorial ou structurel, maintenir les deux versions et vérifier les liens du sélecteur FR | EN, les métadonnées de langue et les chemins relatifs depuis `en/index.html`.
+6. Vérifier que les liens, les noms de fichiers et les chemins des ressources restent cohérents avec les deux pages.
+7. Mettre à jour `README.md` si les modalités d'utilisation ou de publication changent.
+8. Ajouter une entrée datée au journal ci-dessous pour toute évolution notable, ainsi que les décisions prises et les points restant à confirmer.
+9. Dans le compte rendu, indiquer les fichiers modifiés et les vérifications réellement effectuées. Ne pas annoncer une mise en ligne tant qu'une URL publique n'a pas été obtenue et vérifiée.
 
 ## 7. Préparation et procédure de déploiement
 
@@ -85,7 +88,7 @@ Pour chaque nouvelle évolution :
 3. Ne définir aucune commande de build. Si la plateforme demande un dossier de sortie, utiliser la racine du projet.
 4. Si un domaine est fourni, le relier au site et activer HTTPS selon les instructions de l'hébergeur.
 5. Ouvrir l'URL publique et vérifier le chargement de la page, du logo, du favicon, des styles, du menu mobile, des liens internes et du lien de contact.
-6. Vérifier le titre et la description affichés dans l'onglet du navigateur, ainsi que le rendu sur mobile et ordinateur.
+6. Vérifier les deux versions, le sélecteur de langue, les titres et descriptions, ainsi que le rendu sur mobile et ordinateur.
 7. Noter dans le journal la plateforme, le dépôt ou le mode de transfert, le domaine, la date de publication et l'URL publique. Ne jamais inscrire de mot de passe, jeton ou clé secrète dans ce fichier.
 
 ## 8. Journal des évolutions
@@ -120,6 +123,11 @@ Mettre cette section à jour au fil du travail. Garder une trace brève des chan
 - Navigation ramenée aux expertises, aux clients et au contact; les quatre étapes de la méthode restent visibles dans le premier écran.
 - Suppression de la section méthode répétée et des blocs mission/vision redondants; les engagements distinctifs sont formulés en phrases courtes.
 - Agrandissement des textes de lecture et simplification des rubriques pour faciliter la lecture sur ordinateur et mobile.
+
+### 2026-09-28 — Version anglaise
+
+- Conservation de la version française à la racine et ajout de la version anglaise dans `en/`, avec un sélecteur FR | EN sur les deux pages.
+- Adaptation des textes en anglais professionnel et mise à jour des métadonnées, chemins de ressources et consignes pour maintenir les deux langues cohérentes.
 
 ### À confirmer avant publication
 
