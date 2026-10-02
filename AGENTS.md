@@ -135,6 +135,12 @@ Mettre cette section à jour au fil du travail. Garder une trace brève des chan
 - Ajout d'apparitions progressives au défilement, d'une entrée séquencée pour les quatre étapes, d'un dessin doux des anneaux du bloc Contact et de retours légers au survol.
 - Conservation des couleurs et des contenus; prise en compte des préférences de réduction des animations et maintien de l'affichage complet sans JavaScript.
 
+### 2026-10-02 — Précision des textes
+
+- Clarification de la promesse « De la stratégie aux résultats » et des quatre étapes : structurer, piloter, accompagner et évaluer.
+- Réécriture des expertises, des engagements et du contact pour préciser les bénéfices pour le client, avec des phrases courtes et un ton professionnel.
+- Harmonisation de la version anglaise et des métadonnées des deux pages.
+
 ### À confirmer avant publication
 
 - Activation de GitHub Pages pour publier le site, si souhaité.
